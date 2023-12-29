@@ -14,6 +14,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Українська", "У�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ВідновленняNpm", "ВідновленняNpm\ВідновленняNpm.csproj", "{348B3E33-4BD7-4A33-BDB9-A92E60F4CF74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ГенераціяАПІ", "ГенераціяАПІ\ГенераціяАПІ.csproj", "{BA33D1F9-12A5-4F21-833A-54D9460EE79F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{348B3E33-4BD7-4A33-BDB9-A92E60F4CF74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{348B3E33-4BD7-4A33-BDB9-A92E60F4CF74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{348B3E33-4BD7-4A33-BDB9-A92E60F4CF74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA33D1F9-12A5-4F21-833A-54D9460EE79F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA33D1F9-12A5-4F21-833A-54D9460EE79F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA33D1F9-12A5-4F21-833A-54D9460EE79F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA33D1F9-12A5-4F21-833A-54D9460EE79F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
