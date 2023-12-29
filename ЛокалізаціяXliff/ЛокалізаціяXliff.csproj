@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <!-- Parameters from Arcade -->
+    <XlfLanguages>uk</XlfLanguages>
+    <UpdateXlfOnBuild>true</UpdateXlfOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.XliffTasks" Version="9.0.0-beta.23565.1" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ГлобальніРядки.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ГлобальніРядки.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="ГлобальніРядки.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ГлобальніРядки.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Using Include="Система" />
+  </ItemGroup>
+
+  <Import Project="..\Українська\Українська.projitems" Label="Shared" />
+
+</Project>

@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ЛокалізаціяXliff", "ЛокалізаціяXliff\ЛокалізаціяXliff.csproj", "{A5E89070-B4A4-497A-9540-FE3374058156}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A431AD05-04C6-436C-AEDC-C8F9628CB296}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Українська", "Українська\Українська.shproj", "{DD2752C9-0283-4C6B-BBAF-F51860D2DD65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5E89070-B4A4-497A-9540-FE3374058156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E89070-B4A4-497A-9540-FE3374058156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E89070-B4A4-497A-9540-FE3374058156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E89070-B4A4-497A-9540-FE3374058156}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DD2752C9-0283-4C6B-BBAF-F51860D2DD65} = {A431AD05-04C6-436C-AEDC-C8F9628CB296}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51F008B2-608D-4E08-A454-F38F09F83DA1}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Українська\Українська.projitems*{a5e89070-b4a4-497a-9540-fe3374058156}*SharedItemsImports = 5
+		Українська\Українська.projitems*{dd2752c9-0283-4c6b-bbaf-f51860d2dd65}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal
