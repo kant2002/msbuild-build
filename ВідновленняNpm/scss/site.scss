@@ -1,0 +1,32 @@
+﻿// Bootstrap variables override
+$body-bg: #f7f7f7 !default;
+$body-color: #383e49 !default;
+$primary: #0057B8 !default;
+$secondary: #FFD700 !default;
+$success: #2ade56 !default;
+$danger: #e01d2a !default;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
