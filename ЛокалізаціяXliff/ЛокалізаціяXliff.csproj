@@ -5,11 +5,12 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <!-- Parameters from Arcade -->
+    <!-- Параметри із Аркади -->
     <XlfLanguages>uk</XlfLanguages>
     <UpdateXlfOnBuild>true</UpdateXlfOnBuild>
   </PropertyGroup>
 
+  <!-- Документація як користуватися https://github.com/dotnet/arcade/tree/main/src/Microsoft.DotNet.XliffTasks -->
   <ItemGroup>
     <PackageReference Include="Microsoft.DotNet.XliffTasks" Version="9.0.0-beta.23565.1" PrivateAssets="all" />
   </ItemGroup>
