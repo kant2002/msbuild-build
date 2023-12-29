@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <Import Project="ProjectReference.targets" Sdk="Microsoft.DotNet.CMake.Sdk" />
+
+  <ItemGroup>
+    <NativeProjectReference Include="Native\CMakeLists.txt" CMakeProject="Native\ПримерDll.proj" BuildNative="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Система" />
+  </ItemGroup>
+
+  <Import Project="..\Українська\Українська.projitems" Label="Shared" />
+
+</Project>

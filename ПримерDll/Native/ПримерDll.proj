@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.DotNet.CMake.Sdk">
+  <PropertyGroup>
+    <CMakeLists>CMakeLists.txt</CMakeLists>
+    <Platform>x64</Platform>
+    <VSWhereVersion Condition="'$(VSWhereVersion)' == ''">2.6.7</VSWhereVersion>
+  </PropertyGroup>
+</Project>
