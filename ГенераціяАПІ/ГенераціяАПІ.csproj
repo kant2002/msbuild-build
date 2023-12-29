@@ -22,7 +22,7 @@
 
   <!-- Генерація клієнту АПІ після того як OpenAPI файл буде згенеровано -->
   <Target Name="СформуватиКлиентівАпі" AfterTargets="GenerateOpenApiDocuments">
-    <Exec Command="$(NSwagExe_Net60) openapi2tsclient /input:obj\ГенераціяАПІ.json /output:апка/апі.ts /NullValue:Null /typeStyle:Interface /className:КлієнтАпі" />
+    <Exec Command="$(NSwagExe_Net60) openapi2tsclient /input:obj\ГенераціяАПІ.json /output:апка/апі.ts /className:КлієнтАпі /NullValue:Null /typeStyle:Interface" />
   </Target>
 
   <ItemGroup>
