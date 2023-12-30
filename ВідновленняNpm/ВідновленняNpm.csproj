@@ -14,7 +14,8 @@
     <Exec Command="npm install" />
   </Target>
 
-  <Target AfterTargets="Build" Name="ПобудуватиМодіфікованийБутстрап" Inputs="scss/site.scss" Outputs="wwwroot/css/site.css">
+  <Target AfterTargets="Build" Name="ПобудуватиМодіфікованийБутстрап" 
+          Inputs="scss/site.scss" Outputs="wwwroot/css/site.css">
     <Exec Command="npm run css" />
   </Target>
 
