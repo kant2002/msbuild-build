@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <VSTestVerbosity>diag</VSTestVerbosity>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+  </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="**/*.tst">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Remove="bin/**/*.tst" />
+        <Content Remove="obj/**/*.tst" />
+    </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\КеруванняТестами.АдаптерТестів\КеруванняТестами.АдаптерТестів.csproj" />
+  </ItemGroup>
+
+  <Target Name="FindTestAdapter">
+
+    <MSBuild Projects="@(ProjectReference)" Targets="GetTargetPath">
+      <Output TaskParameter="TargetOutputs" ItemName="TestAdapter" />
+    </MSBuild>
+
+    <PropertyGroup>
+      <VSTestTestAdapterPath>@(TestAdapter)</VSTestTestAdapterPath>
+    </PropertyGroup>
+  </Target>
+
+  <Target BeforeTargets="VSTest" Name="ApplyTestAdapter" DependsOnTargets="FindTestAdapter">
+
+    <PropertyGroup>
+      <VSTestTestAdapterPath>@(TestAdapter)</VSTestTestAdapterPath>
+      <VSTestCLIRunSettings>/TestAdapterLoadingStrategy:NextToSource</VSTestCLIRunSettings>
+    </PropertyGroup>
+  </Target>
+
+</Project>
